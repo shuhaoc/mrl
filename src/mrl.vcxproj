@@ -77,10 +77,16 @@
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\mrl\common\SingletonSupport.h" />
+    <ClInclude Include="..\include\mrl\common\tstring.h" />
+    <ClInclude Include="..\include\mrl\MrlExport.h" />
+    <ClInclude Include="..\include\mrl\utility\CodeConv.h" />
+    <ClInclude Include="..\include\mrl\utility\DebugInfo.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CodeConv.cpp" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

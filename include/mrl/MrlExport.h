@@ -1,7 +1,5 @@
 ﻿#pragma once
 
-#pragma once
-
 // 静态链接取消此宏定义
 #define MRL_DYNAMIC_LINK
 

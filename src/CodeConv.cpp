@@ -71,6 +71,12 @@ std::string unicodeToAscii(const std::wstring& src) {
 	return dest;
 }
 
+std::string unicodeToUtf8(const std::wstring& src) {
+	std::string dest;
+	wideCharToMultiByte(CP_UTF8, src, dest);
+	return dest;
+}
+
 } // namespace codeconv
 } // namespace utility
 } // namespace mrl

@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
     <Filter Include="include">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
@@ -10,24 +14,24 @@
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="include\mrl">
-      <UniqueIdentifier>{fb0ead9b-8fed-4cb8-abe2-828152f82940}</UniqueIdentifier>
+      <UniqueIdentifier>{8f66f102-3628-4162-8a59-2e470db53cbb}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\mrl\utility">
-      <UniqueIdentifier>{0c3da23f-b289-456c-a040-10b6fa7d8261}</UniqueIdentifier>
+      <UniqueIdentifier>{6035d4aa-35eb-4560-8ea0-fa3504b73e51}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\mrl\common">
-      <UniqueIdentifier>{7c8d0a5f-23c9-4340-beeb-8e013be83e11}</UniqueIdentifier>
+      <UniqueIdentifier>{e7c583f4-b4a2-4f1d-b489-7c71f5cf4f5f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\include\mrl\MrlExport.h">
+      <Filter>include\mrl</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>src</Filter>
+    <ClInclude Include="..\include\mrl\utility\CodeConv.h">
+      <Filter>include\mrl\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\mrl\utility\DebugInfo.h">
+      <Filter>include\mrl\utility</Filter>
     </ClInclude>
     <ClInclude Include="..\include\mrl\common\SingletonSupport.h">
       <Filter>include\mrl\common</Filter>
@@ -35,16 +39,13 @@
     <ClInclude Include="..\include\mrl\common\tstring.h">
       <Filter>include\mrl\common</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\mrl\utility\DebugInfo.h">
-      <Filter>include\mrl\utility</Filter>
+    <ClInclude Include="stdafx.h">
+      <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\mrl\utility\CodeConv.h">
-      <Filter>include\mrl\utility</Filter>
+    <ClInclude Include="targetver.h">
+      <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\mrl\MrlExport.h">
-      <Filter>include\mrl</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
+    <ClInclude Include="resource1.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
@@ -52,17 +53,14 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="mrl.cpp">
+    <ClCompile Include="CodeConv.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="CodeConv.cpp">
+    <ClCompile Include="mrl.cpp">
       <Filter>src</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="mrl.rc" />
   </ItemGroup>
 </Project>

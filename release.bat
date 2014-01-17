@@ -1,7 +1,9 @@
 set MRL_ROOT=.
 
-msbuild /t:Rebuild /p:Configuration=Debug %MRL_ROOT%\mrl.sln
-msbuild /t:Rebuild /p:Configuration=Release %MRL_ROOT%\mrl.sln
+msbuild /t:Clean /p:Configuration=Debug %MRL_ROOT%\mrl.sln
+msbuild /t:Clean /p:Configuration=Release %MRL_ROOT%\mrl.sln
+msbuild /t:Build /p:Configuration=Debug %MRL_ROOT%\mrl.sln
+msbuild /t:Build /p:Configuration=Release %MRL_ROOT%\mrl.sln
 
 for /f %%i in (project_list.txt) do ^
 xcopy /e /y /i /f %MRL_ROOT%\include\mrl ..\%%i\include\mrl & ^

@@ -45,8 +45,8 @@
     <ClInclude Include="targetver.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="resource1.h">
-      <Filter>include</Filter>
+    <ClInclude Include="..\include\mrl\utility\SimpleTaskMessageWindow.h">
+      <Filter>include\mrl\utility</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -60,6 +60,9 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="mrl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTaskMessageWindow.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

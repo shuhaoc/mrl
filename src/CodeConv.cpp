@@ -65,6 +65,12 @@ std::wstring asciiToUnicode(const std::string& src) {
 	return dest;
 }
 
+std::wstring utf8ToUnicode(const std::string& src) {
+	std::wstring dest;
+	multiByteToWideChar(CP_UTF8, src, dest);
+	return dest;
+}
+
 std::string unicodeToAscii(const std::wstring& src) {
 	std::string dest;
 	wideCharToMultiByte(CP_ACP, src, dest);

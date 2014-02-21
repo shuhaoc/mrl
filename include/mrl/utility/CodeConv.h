@@ -17,6 +17,13 @@ namespace codeconv {
 MRL_EXPORT std::wstring asciiToUnicode(const std::string& src);
 
 /**
+ * UTF8编码字符串转化为Unicode编码（UTF-16）
+ * @param src	源字符串
+ * @return		目标字符串
+ */
+MRL_EXPORT std::wstring utf8ToUnicode(const std::string& src);
+
+/**
  * Unicode编码（UTF-16）字符串转化为ANSI编码（GB2312）。
  * @param src	源字符串
  * @return		目标字符串
